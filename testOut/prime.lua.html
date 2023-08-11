@@ -1,0 +1,443 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css.css" type="text/css">
+    <title></title>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="group one">
+            <div class="description"><span>CCDoc test</span></div>
+        </div>
+        <div class="group two">
+        </div>
+        <div class="group three">
+            <div class="button iconleft"><a href="../class/user.html" title="user"><img src="../img/i-left.svg?7653a2d"
+                        alt=""><span>Previous</span></a></div>
+            <div class="button iconright"><a href="../module/system.html" title="system"><span>Next</span><img
+                        src="../img/i-right.svg?7653a2d" alt=""></a></div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="classes">
+            <div class="heading">Files</div>
+            <ul>
+                
+                <li><a href="./testme.lua.html">testme.lua</a></li>
+                
+                <li><a href="./testin.lua.html">testin.lua</a></li>
+                
+                <li><a href="./prime.lua.html">prime.lua</a></li>
+                
+            </ul>
+        </div>
+        <div class="modules">
+            <div class="heading">Modules</div>
+            <ul>
+                
+                <li><a href="#Module_{m.name}}">PrimeUI</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="body">
+        
+            <div class="section">
+                <h2 class="class" id="Module_PrimeUI">Module <code>PrimeUI</code>
+                    <a class="permalink" href="#Module_PrimeUI" title="Permalink to this definition">¶</a>
+                </h2>
+                <div class="inner">
+                    <div class="synopsis">
+                        <h3>Synopsis</h3>
+                        <div class="heading">Methods</div>
+                        <table class="functions ">
+                            <tbody>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_addTask"><var>PrimeUI.addTask</var></a></td>
+                                        <td class="doc">
+                                            <p>     Adds a task to run in the main loop.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_clear"><var>PrimeUI.clear</var></a></td>
+                                        <td class="doc">
+                                            <p>     Clears the screen and resets all components. Do not use any previously</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_setCursorWindow"><var>PrimeUI.setCursorWindow</var></a></td>
+                                        <td class="doc">
+                                            <p>     Sets or clears the window that holds where the cursor should be.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_getWindowPos"><var>PrimeUI.getWindowPos</var></a></td>
+                                        <td class="doc">
+                                            <p>     Gets the absolute position of a coordinate relative to a window.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_run"><var>PrimeUI.run</var></a></td>
+                                        <td class="doc">
+                                            <p>     Runs the main loop, returning information on an action.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_borderBox"><var>PrimeUI.borderBox</var></a></td>
+                                        <td class="doc">
+                                            <p>Draws a thin border around a screen region.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_button"><var>PrimeUI.button</var></a></td>
+                                        <td class="doc">
+                                            <p>Creates a clickable button on screen with text.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_centerLabel"><var>PrimeUI.centerLabel</var></a></td>
+                                        <td class="doc">
+                                            <p>Draws a line of text, centering it inside a box horizontally.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_checkSelectionBox"><var>PrimeUI.checkSelectionBox</var></a></td>
+                                        <td class="doc">
+                                            <p>Creates a list of entries with toggleable check boxes.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_drawImage"><var>PrimeUI.drawImage</var></a></td>
+                                        <td class="doc">
+                                            <p>Draws a BIMG-formatted image to the screen. This does not support transparency,</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_drawText"><var>PrimeUI.drawText</var></a></td>
+                                        <td class="doc">
+                                            <p>Draws a block of text inside a window with word wrapping, optionally resizing the window to fit.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_horizontalLine"><var>PrimeUI.horizontalLine</var></a></td>
+                                        <td class="doc">
+                                            <p>Draws a horizontal line at a position with the specified width.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_inputBox"><var>PrimeUI.inputBox</var></a></td>
+                                        <td class="doc">
+                                            <p>Creates a text input box.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_interval"><var>PrimeUI.interval</var></a></td>
+                                        <td class="doc">
+                                            <p>Runs a function or action repeatedly after a specified time period until canceled.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_keyAction"><var>PrimeUI.keyAction</var></a></td>
+                                        <td class="doc">
+                                            <p>Adds an action to trigger when a key is pressed.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_keyCombo"><var>PrimeUI.keyCombo</var></a></td>
+                                        <td class="doc">
+                                            <p>Adds an action to trigger when a key is pressed with modifier keys.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_label"><var>PrimeUI.label</var></a></td>
+                                        <td class="doc">
+                                            <p>Draws a line of text at a position.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_progressBar"><var>PrimeUI.progressBar</var></a></td>
+                                        <td class="doc">
+                                            <p>Creates a progress bar, which can be updated by calling the returned function.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_scrollBox"><var>PrimeUI.scrollBox</var></a></td>
+                                        <td class="doc">
+                                            <p>Creates a scrollable window, which allows drawing large content in a small area.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_selectionBox"><var>PrimeUI.selectionBox</var></a></td>
+                                        <td class="doc">
+                                            <p>Creates a list of entries that can each be selected.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_textBox"><var>PrimeUI.textBox</var></a></td>
+                                        <td class="doc">
+                                            <p>Creates a text box that wraps text and can have its text modified later.</p>
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="name"><a href="#func_PrimeUI_timeout"><var>PrimeUI.timeout</var></a></td>
+                                        <td class="doc">
+                                            <p>Runs a function or action after the specified time period, with optional canceling.</p>
+                                        </td>
+                                    </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <dl class="functions">
+                        
+                            <dt id="func_PrimeUI_addTask">
+                                <var>PrimeUI.addTask</var>(func)
+                                <a class="permalink" href="#func_PrimeUI_addTask" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>     Adds a task to run in the main loop.<br>    @param func function The function to run, usually an `os.pullEvent` loop</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_clear">
+                                <var>PrimeUI.clear</var>()
+                                <a class="permalink" href="#func_PrimeUI_clear" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>     Clears the screen and resets all components. Do not use any previously<br>     created components after calling this function.</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_setCursorWindow">
+                                <var>PrimeUI.setCursorWindow</var>(win)
+                                <a class="permalink" href="#func_PrimeUI_setCursorWindow" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>     Sets or clears the window that holds where the cursor should be.<br>    @param win window|nil The window to set as the active window</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_getWindowPos">
+                                <var>PrimeUI.getWindowPos</var>(win, x, y)
+                                <a class="permalink" href="#func_PrimeUI_getWindowPos" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>     Gets the absolute position of a coordinate relative to a window.<br>    @param win window The window to check<br>    @param x number The relative X position of the point<br>    @param y number The relative Y position of the point<br>    @return number x The absolute X position of the window<br>    @return number y The absolute Y position of the window</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_run">
+                                <var>PrimeUI.run</var>()
+                                <a class="permalink" href="#func_PrimeUI_run" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>     Runs the main loop, returning information on an action.<br>    @return any ... The result of the coroutine that exited</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_borderBox">
+                                <var>PrimeUI.borderBox</var>(win, x, y, width, height, fgColor, bgColor)
+                                <a class="permalink" href="#func_PrimeUI_borderBox" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>Draws a thin border around a screen region.<br>@param win window The window to draw on<br>@param x number The X coordinate of the inside of the box<br>@param y number The Y coordinate of the inside of the box<br>@param width number The width of the inner box<br>@param height number The height of the inner box<br>@param fgColor color|nil The color of the border (defaults to white)<br>@param bgColor color|nil The color of the background (defaults to black)</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_button">
+                                <var>PrimeUI.button</var>(win, x, y, text, action, fgColor, bgColor, clickedColor)
+                                <a class="permalink" href="#func_PrimeUI_button" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>Creates a clickable button on screen with text.<br>@param win window The window to draw on<br>@param x number The X position of the button<br>@param y number The Y position of the button<br>@param text string The text to draw on the button<br>@param action function|string A function to call when clicked, or a string to send with a `run` event<br>@param fgColor color|nil The color of the button text (defaults to white)<br>@param bgColor color|nil The color of the button (defaults to light gray)<br>@param clickedColor color|nil The color of the button when clicked (defaults to gray)</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_centerLabel">
+                                <var>PrimeUI.centerLabel</var>(win, x, y, width, text, fgColor, bgColor)
+                                <a class="permalink" href="#func_PrimeUI_centerLabel" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>Draws a line of text, centering it inside a box horizontally.<br>@param win window The window to draw on<br>@param x number The X position of the left side of the box<br>@param y number The Y position of the box<br>@param width number The width of the box to draw in<br>@param text string The text to draw<br>@param fgColor color|nil The color of the text (defaults to white)<br>@param bgColor color|nil The color of the background (defaults to black)</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_checkSelectionBox">
+                                <var>PrimeUI.checkSelectionBox</var>(win, x, y, width, height, selections, action, fgColor, bgColor)
+                                <a class="permalink" href="#func_PrimeUI_checkSelectionBox" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>Creates a list of entries with toggleable check boxes.<br>@param win window The window to draw on<br>@param x number The X coordinate of the inside of the box<br>@param y number The Y coordinate of the inside of the box<br>@param width number The width of the inner box<br>@param height number The height of the inner box<br>@param selections {string: string|boolean} A list of entries to show, where the value is whether the item is pre-selected (or `"R"` for required/forced selected)<br>@param action function|string|nil A function or `run` event that's called when a selection is made<br>@param fgColor color|nil The color of the text (defaults to white)<br>@param bgColor color|nil The color of the background (defaults to black)</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_drawImage">
+                                <var>PrimeUI.drawImage</var>(win, x, y, data, index, setPalette)
+                                <a class="permalink" href="#func_PrimeUI_drawImage" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>Draws a BIMG-formatted image to the screen. This does not support transparency,<br> and does not handle animation on its own (but the index parameter may be<br> used by apps to implement animation).<br>@param win window The window to draw on<br>@param x number The X position of the top left corner of the image<br>@param y number The Y position of the top left corner of the image<br>@param data string|table The path to the image to load, or the image data itself<br>@param index number|nil The index of the frame to draw (defaults to 1)<br>@param setPalette boolean|nil Whether to set the palette if the image contains one (defaults to true)</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_drawText">
+                                <var>PrimeUI.drawText</var>(win, text, resizeToFit, fgColor, bgColor)
+                                <a class="permalink" href="#func_PrimeUI_drawText" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>Draws a block of text inside a window with word wrapping, optionally resizing the window to fit.<br>@param win window The window to draw in<br>@param text string The text to draw<br>@param resizeToFit boolean|nil Whether to resize the window to fit the text (defaults to false). This is useful for scroll boxes.<br>@param fgColor color|nil The color of the text (defaults to white)<br>@param bgColor color|nil The color of the background (defaults to black)<br>@return number lines The total number of lines drawn</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_horizontalLine">
+                                <var>PrimeUI.horizontalLine</var>(win, x, y, width, fgColor, bgColor)
+                                <a class="permalink" href="#func_PrimeUI_horizontalLine" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>Draws a horizontal line at a position with the specified width.<br>@param win window The window to draw on<br>@param x number The X position of the left side of the line<br>@param y number The Y position of the line<br>@param width number The width/length of the line<br>@param fgColor color|nil The color of the line (defaults to white)<br>@param bgColor color|nil The color of the background (defaults to black)</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_inputBox">
+                                <var>PrimeUI.inputBox</var>(win, x, y, width, action, fgColor, bgColor, replacement, history, completion, default)
+                                <a class="permalink" href="#func_PrimeUI_inputBox" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>Creates a text input box.<br>@param win window The window to draw on<br>@param x number The X position of the left side of the box<br>@param y number The Y position of the box<br>@param width number The width/length of the box<br>@param action function|string A function or `run` event to call when the enter key is pressed<br>@param fgColor color|nil The color of the text (defaults to white)<br>@param bgColor color|nil The color of the background (defaults to black)<br>@param replacement string|nil A character to replace typed characters with<br>@param history string[]|nil A list of previous entries to provide<br>@param completion function|nil A function to call to provide completion<br>@param default string|nil A string to return if the box is empty</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_interval">
+                                <var>PrimeUI.interval</var>(time, action)
+                                <a class="permalink" href="#func_PrimeUI_interval" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>Runs a function or action repeatedly after a specified time period until canceled.<br> If a function is passed as an action, it may return a number to change the<br> period, or `false` to stop it.<br>@param time number The amount of time to wait for each time, in seconds<br>@param action function|string The function to call when the timer completes, or a `run` event to send<br>@return function cancel A function to cancel the timer</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_keyAction">
+                                <var>PrimeUI.keyAction</var>(key, action)
+                                <a class="permalink" href="#func_PrimeUI_keyAction" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>Adds an action to trigger when a key is pressed.<br>@param key key The key to trigger on, from `keys.*`<br>@param action function|string A function to call when clicked, or a string to use as a key for a `run` return event</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_keyCombo">
+                                <var>PrimeUI.keyCombo</var>(key, withCtrl, withAlt, withShift, action)
+                                <a class="permalink" href="#func_PrimeUI_keyCombo" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>Adds an action to trigger when a key is pressed with modifier keys.<br>@param key key The key to trigger on, from `keys.*`<br>@param withCtrl boolean Whether Ctrl is required<br>@param withAlt boolean Whether Alt is required<br>@param withShift boolean Whether Shift is required<br>@param action function|string A function to call when clicked, or a string to use as a key for a `run` return event</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_label">
+                                <var>PrimeUI.label</var>(win, x, y, text, fgColor, bgColor)
+                                <a class="permalink" href="#func_PrimeUI_label" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>Draws a line of text at a position.<br>@param win window The window to draw on<br>@param x number The X position of the left side of the text<br>@param y number The Y position of the text<br>@param text string The text to draw<br>@param fgColor color|nil The color of the text (defaults to white)<br>@param bgColor color|nil The color of the background (defaults to black)</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_progressBar">
+                                <var>PrimeUI.progressBar</var>(win, x, y, width, fgColor, bgColor, useShade)
+                                <a class="permalink" href="#func_PrimeUI_progressBar" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>Creates a progress bar, which can be updated by calling the returned function.<br>@param win window The window to draw on<br>@param x number The X position of the left side of the bar<br>@param y number The Y position of the bar<br>@param width number The width of the bar<br>@param fgColor color|nil The color of the activated part of the bar (defaults to white)<br>@param bgColor color|nil The color of the inactive part of the bar (defaults to black)<br>@param useShade boolean|nil Whether to use shaded areas for the inactive part (defaults to false)<br>@return function redraw A function to call to update the progress of the bar, taking a number from 0.0 to 1.0</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_scrollBox">
+                                <var>PrimeUI.scrollBox</var>(win, x, y, width, height, innerHeight, allowArrowKeys, showScrollIndicators, fgColor, bgColor)
+                                <a class="permalink" href="#func_PrimeUI_scrollBox" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>Creates a scrollable window, which allows drawing large content in a small area.<br>@param win window The parent window of the scroll box<br>@param x number The X position of the box<br>@param y number The Y position of the box<br>@param width number The width of the box<br>@param height number The height of the outer box<br>@param innerHeight number The height of the inner scroll area<br>@param allowArrowKeys boolean|nil Whether to allow arrow keys to scroll the box (defaults to true)<br>@param showScrollIndicators boolean|nil Whether to show arrow indicators on the right side when scrolling is available, which reduces the inner width by 1 (defaults to false)<br>@param fgColor number|nil The color of scroll indicators (defaults to white)<br>@param bgColor color|nil The color of the background (defaults to black)<br>@return window inner The inner window to draw inside</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_selectionBox">
+                                <var>PrimeUI.selectionBox</var>(win, x, y, width, height, entries, action, selectChangeAction, fgColor, bgColor)
+                                <a class="permalink" href="#func_PrimeUI_selectionBox" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>Creates a list of entries that can each be selected.<br>@param win window The window to draw on<br>@param x number The X coordinate of the inside of the box<br>@param y number The Y coordinate of the inside of the box<br>@param width number The width of the inner box<br>@param height number The height of the inner box<br>@param entries string[] A list of entries to show, where the value is whether the item is pre-selected (or `"R"` for required/forced selected)<br>@param action function|string A function or `run` event that's called when a selection is made<br>@param selectChangeAction function|string|nil A function or `run` event that's called when the current selection is changed<br>@param fgColor color|nil The color of the text (defaults to white)<br>@param bgColor color|nil The color of the background (defaults to black)</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_textBox">
+                                <var>PrimeUI.textBox</var>(win, x, y, width, height, text, fgColor, bgColor)
+                                <a class="permalink" href="#func_PrimeUI_textBox" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>Creates a text box that wraps text and can have its text modified later.<br>@param win window The parent window of the text box<br>@param x number The X position of the box<br>@param y number The Y position of the box<br>@param width number The width of the box<br>@param height number The height of the box<br>@param text string The initial text to draw<br>@param fgColor color|nil The color of the text (defaults to white)<br>@param bgColor color|nil The color of the background (defaults to black)<br>@return function redraw A function to redraw the window with new contents</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                            <dt id="func_PrimeUI_timeout">
+                                <var>PrimeUI.timeout</var>(time, action)
+                                <a class="permalink" href="#func_PrimeUI_timeout" title="Permalink to this definition">¶</a>
+                            </dt>
+                            <dd>
+                                <p>Runs a function or action after the specified time period, with optional canceling.<br>@param time number The amount of time to wait for, in seconds<br>@param action function|string The function to call when the timer completes, or a `run` event to send<br>@return function cancel A function to cancel the timer</p>
+                                <!--<div class="admonition warning"><div class="title">e e</div><div class="body"><p>    E</p>
+                                </div></div>-->
+                            </dd>
+                        
+                    </dl>
+                </div>
+            </div>
+        
+    </div>
+</body>
+
+</html>
